@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		03EEB2FA2CC1D44A005FC2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EEB2DE2CC1D448005FC2BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03EEB2E52CC1D448005FC2BC;
+			remoteInfo = InputSourceSwitcher;
+		};
+		03EEB3042CC1D44A005FC2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EEB2DE2CC1D448005FC2BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03EEB2E52CC1D448005FC2BC;
+			remoteInfo = InputSourceSwitcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EEB2E62CC1D448005FC2BC /* InputSourceSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputSourceSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03EEB2F92CC1D44A005FC2BC /* InputSourceSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputSourceSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03EEB3032CC1D44A005FC2BC /* InputSourceSwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputSourceSwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		03EEB2E82CC1D448005FC2BC /* InputSourceSwitcher */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = InputSourceSwitcher;
+			sourceTree = "<group>";
+		};
+		03EEB2FC2CC1D44A005FC2BC /* InputSourceSwitcherTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = InputSourceSwitcherTests;
+			sourceTree = "<group>";
+		};
+		03EEB3062CC1D44A005FC2BC /* InputSourceSwitcherUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = InputSourceSwitcherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03EEB2E32CC1D448005FC2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEB2F62CC1D44A005FC2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEB3002CC1D44A005FC2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03EEB2DD2CC1D448005FC2BC = {
+			isa = PBXGroup;
+			children = (
+				03EEB2E82CC1D448005FC2BC /* InputSourceSwitcher */,
+				03EEB2FC2CC1D44A005FC2BC /* InputSourceSwitcherTests */,
+				03EEB3062CC1D44A005FC2BC /* InputSourceSwitcherUITests */,
+				03EEB2E72CC1D448005FC2BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03EEB2E72CC1D448005FC2BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03EEB2E62CC1D448005FC2BC /* InputSourceSwitcher.app */,
+				03EEB2F92CC1D44A005FC2BC /* InputSourceSwitcherTests.xctest */,
+				03EEB3032CC1D44A005FC2BC /* InputSourceSwitcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03EEB2E52CC1D448005FC2BC /* InputSourceSwitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03EEB30D2CC1D44A005FC2BC /* Build configuration list for PBXNativeTarget "InputSourceSwitcher" */;
+			buildPhases = (
+				03EEB2E22CC1D448005FC2BC /* Sources */,
+				03EEB2E32CC1D448005FC2BC /* Frameworks */,
+				03EEB2E42CC1D448005FC2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				03EEB2E82CC1D448005FC2BC /* InputSourceSwitcher */,
+			);
+			name = InputSourceSwitcher;
+			packageProductDependencies = (
+			);
+			productName = InputSourceSwitcher;
+			productReference = 03EEB2E62CC1D448005FC2BC /* InputSourceSwitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03EEB2F82CC1D44A005FC2BC /* InputSourceSwitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03EEB3102CC1D44A005FC2BC /* Build configuration list for PBXNativeTarget "InputSourceSwitcherTests" */;
+			buildPhases = (
+				03EEB2F52CC1D44A005FC2BC /* Sources */,
+				03EEB2F62CC1D44A005FC2BC /* Frameworks */,
+				03EEB2F72CC1D44A005FC2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03EEB2FB2CC1D44A005FC2BC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				03EEB2FC2CC1D44A005FC2BC /* InputSourceSwitcherTests */,
+			);
+			name = InputSourceSwitcherTests;
+			packageProductDependencies = (
+			);
+			productName = InputSourceSwitcherTests;
+			productReference = 03EEB2F92CC1D44A005FC2BC /* InputSourceSwitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03EEB3022CC1D44A005FC2BC /* InputSourceSwitcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03EEB3132CC1D44A005FC2BC /* Build configuration list for PBXNativeTarget "InputSourceSwitcherUITests" */;
+			buildPhases = (
+				03EEB2FF2CC1D44A005FC2BC /* Sources */,
+				03EEB3002CC1D44A005FC2BC /* Frameworks */,
+				03EEB3012CC1D44A005FC2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03EEB3052CC1D44A005FC2BC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				03EEB3062CC1D44A005FC2BC /* InputSourceSwitcherUITests */,
+			);
+			name = InputSourceSwitcherUITests;
+			packageProductDependencies = (
+			);
+			productName = InputSourceSwitcherUITests;
+			productReference = 03EEB3032CC1D44A005FC2BC /* InputSourceSwitcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03EEB2DE2CC1D448005FC2BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					03EEB2E52CC1D448005FC2BC = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					03EEB2F82CC1D44A005FC2BC = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 03EEB2E52CC1D448005FC2BC;
+					};
+					03EEB3022CC1D44A005FC2BC = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 03EEB2E52CC1D448005FC2BC;
+					};
+				};
+			};
+			buildConfigurationList = 03EEB2E12CC1D448005FC2BC /* Build configuration list for PBXProject "InputSourceSwitcher" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03EEB2DD2CC1D448005FC2BC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 03EEB2E72CC1D448005FC2BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03EEB2E52CC1D448005FC2BC /* InputSourceSwitcher */,
+				03EEB2F82CC1D44A005FC2BC /* InputSourceSwitcherTests */,
+				03EEB3022CC1D44A005FC2BC /* InputSourceSwitcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03EEB2E42CC1D448005FC2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEB2F72CC1D44A005FC2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEB3012CC1D44A005FC2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03EEB2E22CC1D448005FC2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEB2F52CC1D44A005FC2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EEB2FF2CC1D44A005FC2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03EEB2FB2CC1D44A005FC2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03EEB2E52CC1D448005FC2BC /* InputSourceSwitcher */;
+			targetProxy = 03EEB2FA2CC1D44A005FC2BC /* PBXContainerItemProxy */;
+		};
+		03EEB3052CC1D44A005FC2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03EEB2E52CC1D448005FC2BC /* InputSourceSwitcher */;
+			targetProxy = 03EEB3042CC1D44A005FC2BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03EEB30B2CC1D44A005FC2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03EEB30C2CC1D44A005FC2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		03EEB30E2CC1D44A005FC2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InputSourceSwitcher/InputSourceSwitcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InputSourceSwitcher/Preview Content\"";
+				DEVELOPMENT_TEAM = 4CVGABYXJS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yusaku.InputSourceSwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		03EEB30F2CC1D44A005FC2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InputSourceSwitcher/InputSourceSwitcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InputSourceSwitcher/Preview Content\"";
+				DEVELOPMENT_TEAM = 4CVGABYXJS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yusaku.InputSourceSwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		03EEB3112CC1D44A005FC2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4CVGABYXJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yusaku.InputSourceSwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InputSourceSwitcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InputSourceSwitcher";
+			};
+			name = Debug;
+		};
+		03EEB3122CC1D44A005FC2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4CVGABYXJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yusaku.InputSourceSwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InputSourceSwitcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InputSourceSwitcher";
+			};
+			name = Release;
+		};
+		03EEB3142CC1D44A005FC2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4CVGABYXJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yusaku.InputSourceSwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = InputSourceSwitcher;
+			};
+			name = Debug;
+		};
+		03EEB3152CC1D44A005FC2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4CVGABYXJS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yusaku.InputSourceSwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = InputSourceSwitcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03EEB2E12CC1D448005FC2BC /* Build configuration list for PBXProject "InputSourceSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EEB30B2CC1D44A005FC2BC /* Debug */,
+				03EEB30C2CC1D44A005FC2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03EEB30D2CC1D44A005FC2BC /* Build configuration list for PBXNativeTarget "InputSourceSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EEB30E2CC1D44A005FC2BC /* Debug */,
+				03EEB30F2CC1D44A005FC2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03EEB3102CC1D44A005FC2BC /* Build configuration list for PBXNativeTarget "InputSourceSwitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EEB3112CC1D44A005FC2BC /* Debug */,
+				03EEB3122CC1D44A005FC2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03EEB3132CC1D44A005FC2BC /* Build configuration list for PBXNativeTarget "InputSourceSwitcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EEB3142CC1D44A005FC2BC /* Debug */,
+				03EEB3152CC1D44A005FC2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03EEB2DE2CC1D448005FC2BC /* Project object */;
+}
