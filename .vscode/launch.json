@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:InputSourceSwitcher}",
+            "name": "Debug InputSourceSwitcher",
+            "program": "${workspaceFolder:InputSourceSwitcher}/.build/debug/InputSourceSwitcher",
+            "preLaunchTask": "swift: Build Debug InputSourceSwitcher"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:InputSourceSwitcher}",
+            "name": "Release InputSourceSwitcher",
+            "program": "${workspaceFolder:InputSourceSwitcher}/.build/release/InputSourceSwitcher",
+            "preLaunchTask": "swift: Build Release InputSourceSwitcher"
+        }
+    ]
+}
