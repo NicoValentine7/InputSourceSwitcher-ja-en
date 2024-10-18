@@ -85,8 +85,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     /// - Returns: 見つかった場合は `TISInputSource`、見つからなかった場合は `nil`
     func getInputSource(by id: String) -> TISInputSource? {
         let properties = [kTISPropertyInputSourceID: id] as CFDictionary
-        guard let sources = TISCreateInputSourceList(properties, false)?.takeRetainedValue() as? [TISInputSource],
-              let source = sources.first else {
+        guard let sourceList = TISCreateInputSourceList(properties, false)?.takeRetainedValue() as? [TISInputSource],
+              let source = sourceList.first else {
             return nil
         }
         return source
@@ -96,8 +96,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func listInputSources() {
         if let sources = TISCreateInputSourceList(nil, false)?.takeRetainedValue() as? [TISInputSource] {
             for source in sources {
-                if let id = TISGetInputSourceProperty(source, kTISPropertyInputSourceID) as? String {
-                    print(id)
+                if let idPtr = TISGetInputSourceProperty(source, kTISPropertyInputSourceID) {
+                    let idCF = idPtr.takeUnretainedValue()
+                    if let id = idCF as? String {
+                        print(id)
+                    }
                 }
             }
         }
