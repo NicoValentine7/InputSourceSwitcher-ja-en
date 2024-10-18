@@ -12,16 +12,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         listInputSources() // 入力ソースをリスト表示（任意）
     }
 
-    func flagsChanged(with event: NSEvent) {
-        // 左コマンドキーが押された場合
-        if event.keyCode == leftCommandKeyCode && event.modifierFlags.contains(.command) {
-            switchToEnglishInput()
-        }
-        // 右コマンドキーが押された場合
-        else if event.keyCode == rightCommandKeyCode && event.modifierFlags.contains(.command) {
-            switchToJapaneseInput()
-        }
+func flagsChanged(with event: NSEvent) {
+    print("flagsChanged detected")
+    print("KeyCode: \(event.keyCode)")
+    print("Modifier Flags: \(event.modifierFlags.rawValue)")
+    
+    // 左コマンドキーが押された場合
+    if event.keyCode == leftCommandKeyCode && event.modifierFlags.contains(.command) {
+        print("Left Command Key Pressed")
+        switchToEnglishInput()
     }
+    // 右コマンドキーが押された場合
+    else if event.keyCode == rightCommandKeyCode && event.modifierFlags.contains(.command) {
+        print("Right Command Key Pressed")
+        switchToJapaneseInput()
+    }
+}
+
 
     func switchToEnglishInput() {
         if let source = getInputSource(by: "com.apple.keylayout.ABC") {
