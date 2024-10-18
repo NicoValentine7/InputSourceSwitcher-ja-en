@@ -2,53 +2,54 @@ import Cocoa
 import Carbon
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    let leftCommandKeyCode: UInt16 = 0x37 // 左コマンドキー
-    let rightCommandKeyCode: UInt16 = 0x36 // 右コマンドキー
+    enum CommandKey: UInt16 {
+        case left = 0x37
+        case right = 0x36
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) { [weak self] event in
             self?.flagsChanged(with: event)
         }
-        listInputSources() // 入力ソースをリスト表示（任意）
+        listInputSources()
     }
 
-func flagsChanged(with event: NSEvent) {
-    print("flagsChanged detected")
-    print("KeyCode: \(event.keyCode)")
-    print("Modifier Flags: \(event.modifierFlags.rawValue)")
-    
-    // 左コマンドキーが押された場合
-    if event.keyCode == leftCommandKeyCode && event.modifierFlags.contains(.command) {
-        print("Left Command Key Pressed")
-        switchToEnglishInput()
-    }
-    // 右コマンドキーが押された場合
-    else if event.keyCode == rightCommandKeyCode && event.modifierFlags.contains(.command) {
-        print("Right Command Key Pressed")
-        switchToJapaneseInput()
-    }
-}
+    func flagsChanged(with event: NSEvent) {
+        guard event.modifierFlags.contains(.command) else { return }
 
+        if let key = CommandKey(rawValue: event.keyCode) {
+            switch key {
+            case .left:
+                switchToEnglishInput()
+            case .right:
+                switchToJapaneseInput()
+            }
+        }
+    }
 
-func switchToEnglishInput() {
-    if let source = getInputSource(by: "com.apple.keylayout.ABC") {
-        TISSelectInputSource(source)
-        print("Switched to English Input")
+    func switchToEnglishInput() {
+        guard let source = getInputSource(by: "com.apple.keylayout.ABC") else {
+            print("英語入力ソースが見つかりません")
+            return
+        }
+        if TISSelectInputSource(source) == noErr {
+            print("英語入力に切り替えました")
         } else {
-            print("English Input Source not found")
+            print("入力ソースの切り替えに失敗しました")
         }
     }
 
     func switchToJapaneseInput() {
-        if let source = getInputSource(by: "com.apple.inputmethod.Kotoeri.RomajiTyping.Japanese") {
-            TISSelectInputSource(source)
-            print("Switched to Japanese Input")
-        } else {
-            print("Japanese Input Source not found")
+        guard let source = getInputSource(by: "com.apple.inputmethod.Kotoeri.RomajiTyping.Japanese") else {
+            print("日本語入力ソースが見つかりません")
+            return
         }
-}
-
-
+        if TISSelectInputSource(source) == noErr {
+            print("日本語入力に切り替えました")
+        } else {
+            print("入力ソースの切り替えに失敗しました")
+        }
+    }
 
     func getInputSource(by id: String) -> TISInputSource? {
         let properties = [kTISPropertyInputSourceID: id] as CFDictionary
@@ -60,12 +61,10 @@ func switchToEnglishInput() {
     }
 
     func listInputSources() {
-        // すべての入力ソースを取得
         if let sources = TISCreateInputSourceList(nil, false)?.takeRetainedValue() as? [TISInputSource] {
             for source in sources {
-                if let cfType = TISGetInputSourceProperty(source, kTISPropertyInputSourceID) {
-                    let cfString = Unmanaged<CFString>.fromOpaque(cfType).takeUnretainedValue()
-                    let id = cfString as String
+                if let idPtr = TISGetInputSourceProperty(source, kTISPropertyInputSourceID) {
+                    let id = Unmanaged<CFString>.fromOpaque(idPtr).takeUnretainedValue() as String
                     print(id)
                 }
             }
