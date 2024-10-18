@@ -30,17 +30,25 @@ func flagsChanged(with event: NSEvent) {
 }
 
 
-    func switchToEnglishInput() {
-        if let source = getInputSource(by: "com.apple.keylayout.ABC") {
-            TISSelectInputSource(source)
+func switchToEnglishInput() {
+    if let source = getInputSource(by: "com.apple.keylayout.ABC") {
+        TISSelectInputSource(source)
+        print("Switched to English Input")
+        } else {
+            print("English Input Source not found")
         }
     }
 
     func switchToJapaneseInput() {
-        if let source = getInputSource(by: "com.apple.inputmethod.Kotoeri.Japanese") {
+        if let source = getInputSource(by: "com.apple.inputmethod.Kotoeri.RomajiTyping.Japanese") {
             TISSelectInputSource(source)
+            print("Switched to Japanese Input")
+        } else {
+            print("Japanese Input Source not found")
         }
-    }
+}
+
+
 
     func getInputSource(by id: String) -> TISInputSource? {
         let properties = [kTISPropertyInputSourceID: id] as CFDictionary
